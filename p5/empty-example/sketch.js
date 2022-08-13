@@ -1,19 +1,22 @@
 function setup() {
-  createCanvas(500,500);
+  createCanvas(500, 500);
   background(220);
 }
 
 function draw() {
   strokeWeight(4);
-  triangle(400,400,100,400,250,125);
+  triangle(250, 350, 100, 350, 200, 150);
+  triangle(400, 350, 250, 350, 300, 150);
   fill(255);
-  ellipse(250,500+100,500,500);
+  ellipseMode(CENTER);
+  ellipse(250, 600, 500, 500);
   rectMode(CENTER);
-  rect(250,350,50,75);
+  rect(250, 350, 50, 75);
   fill(255);
-  ellipse(250,225,200,225);
+  ellipse(250, 225, 200, 225);
   fill(0);
-  ellipse(200+10,220,10,10);
-  ellipse(300-10,220,10,10);
-  arc(250, 250, 270, 270, 0, PI + QUARTER_PI, CHORD);
+  ellipse(210, 220, 10, 10);
+  ellipse(290, 220, 10, 10);
+  ellipseMode(RADIUS);
+  arc(250, 255, 50, 50, 0, PI, CHORD);
 }
