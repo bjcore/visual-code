@@ -4,6 +4,7 @@ function setup() {
 }
 
 function draw() {
+  let eye = map(mouseX, 0, 500, 240, 260);
   strokeWeight(4);
   triangle(250, 340, 110, 340, 200, 120);
   triangle(390, 340, 250, 340, 300, 120);
@@ -18,8 +19,8 @@ function draw() {
   fill(255);
   ellipse(250, 225, 200, 225);
   fill(0);
-  ellipse(210, 225, 10, 15);
-  ellipse(290, 225, 10, 15);
+  ellipse(eye - 40, 225, 10, 15);
+  ellipse(eye + 40, 225, 10, 15);
   ellipseMode(RADIUS);
   arc(250, 265, 50, 50, 0, PI, CHORD);
   arc(250, 200, 97, 97, PI, 0, CHORD);
